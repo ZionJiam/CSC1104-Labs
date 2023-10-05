@@ -1,32 +1,23 @@
 #include <stdio.h>
-#include <math.h>
 
 // function to convert decimal to binary 
-void Decimal2Binary(unsigned char n) 
+void Decimal2Binary(unsigned int n) 
 { 
     // array to store binary number 
-    unsigned char binaryNum[32]; 
-      // counter for binary array 
-    unsigned char i = 0; 
+    int binaryNum[32]; 
+    // counter for binary array 
+    int i = 0; 
 
-    printf("Binary format before reversal is: "); 
-    printf(" Hello World  "); 
+    printf("Binary format before reversal is: \n"); 
 
-    // iteration when the quotient (updated number) not 0
+    // iteration when the quotient (updated number) is not 0
     while (n > 0) {
-    //// Please do not change the codes above ////     
-        //// Please add your codes below //// 
-
-        // storing remainder in binary array binaryNum[ ]           
-
-        // then update the quotient value in each loop
-
-        // Print out the value binaryNum[] in each loop        
-
-        // increase the loop variable in each loop           
-
-        
-        //// Please do not change the codes below ////        
+        // storing remainder in binary array binaryNum[]
+        binaryNum[i] = n % 2;
+        // update the quotient value in each loop
+        n = n / 2;
+        // increase the loop variable in each loop
+        i++;
     } 
 
     printf("\nReverse Order = "); 
@@ -37,8 +28,6 @@ void Decimal2Binary(unsigned char n)
     printf("\n"); 
 } 
 
-
-//// Please do not change the codes below ////  
 // main function 
 int main() 
 { 
