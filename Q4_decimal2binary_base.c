@@ -10,6 +10,7 @@ void Decimal2Binary(unsigned char n)
     unsigned char i = 0; 
 
     printf("Binary format before reversal is: "); 
+    printf(" Hello World  "); 
 
     // iteration when the quotient (updated number) not 0
     while (n > 0) {
